@@ -3,7 +3,7 @@ Moder UI WPF Samples Reference
 
 After installing mui for WPF in Visual Studio (https://github.com/firstfloorsoftware/mui) you may want to use this code samples as a reference building Zune-like apps.
 
-The basic structure of an App is:
+The App's basic structure is:
 
     └──Solution
       └── Project
