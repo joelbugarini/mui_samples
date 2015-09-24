@@ -7,7 +7,8 @@ In Visual Studio:
 
 * Go to **TOOLS** ── **Extensions and Updates**
 * Click **Online** in the left menu and use the **Search Visual Studio Gallery** for _mui wpf_
-* That will give you this result ![Result][logo]
+* That will give you the result listed below: 
+* ![Result][logo]
 
 [logo]: https://cloud.githubusercontent.com/assets/13318413/10085538/a67dc8ce-62be-11e5-8637-c696709a67ce.PNG "Search Result"
 
