@@ -9,7 +9,7 @@ In Visual Studio:
 * Click **Online** in the left menu and use the **Search Visual Studio Gallery** for _mui wpf_
 * That will give you this result ![Result][logo]
 
-[logo]: https://github.com "Search Result"
+[logo]: https://cloud.githubusercontent.com/assets/13318413/10085538/a67dc8ce-62be-11e5-8637-c696709a67ce.PNG "Search Result"
 
 After installing mui for WPF in Visual Studio (https://github.com/firstfloorsoftware/mui) you may want to use this code samples as a reference building Zune-like apps.
 
