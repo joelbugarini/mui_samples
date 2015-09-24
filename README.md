@@ -1,5 +1,5 @@
 # mui_samples
-Moder UI WPF Samples Reference
+Moder UI WPF Samples Reference.
 
 After installing mui for WPF in Visual Studio (https://github.com/firstfloorsoftware/mui) you may want to use this code samples as a reference building Zune-like apps.
 
