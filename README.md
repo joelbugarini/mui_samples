@@ -1,7 +1,7 @@
 # mui_samples
 Moder UI WPF Samples Reference.
 
-### Instalation
+### Installation
 
 ##### In Visual Studio:
 
