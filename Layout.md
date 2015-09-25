@@ -13,7 +13,7 @@ The basic layout uses all the available content space. All that needs to be done
   </ScrollViewer>
 </Grid>
 ```
-
+=====
 #### Split
 
 The split layout divides the page content into two columns. Resources **SplitLeft** and **SplitRight** provide the correct margins.
@@ -36,7 +36,7 @@ The split layout divides the page content into two columns. Resources **SplitLef
   </ScrollViewer>
 </Grid>
 ```
-
+=====
 #### List
 
 The list layout features a list selection on the left-side of the page and the selected page content is shown in a **ModernFrame** on the right. Use the **ModernTab** control and specify a list of links. Make sure the ModernTab.Layout is set to **List**.
@@ -52,7 +52,7 @@ The list layout features a list selection on the left-side of the page and the s
   </mui:ModernTab>
 </Grid>
 ```
-
+=====
 #### Tab
 The tab layout renders tab items at the right side of the page. It uses the exact same **ModernTab** control as the List layout, the only difference is that the Layout must be set to **Tab**. You can use the tab layout to host pages that have a basic, split or list layout as is demonstrated in the image below.
 
