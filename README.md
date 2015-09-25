@@ -6,12 +6,12 @@ Moder UI WPF Samples Reference.
 In Visual Studio:
 
 * Go to **Tools** ── **Extensions and Updates**
-* Click **Online** in the left menu and use the **Search Visual Studio Gallery** for _mui wpf_
+* Select **Online** and Search on **Visual Studio Gallery** for _mui wpf_
 * That will give you this result: 
 
     ![Result][logo]
 
-* Click **Download**, follow the instructions and you are done.
+* Click **Download** and you are done.
 
 After installing mui for WPF in Visual Studio (https://github.com/firstfloorsoftware/mui) you may want to use this code samples as a reference building Zune-like apps.
 
