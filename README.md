@@ -16,9 +16,9 @@ In Visual Studio:
 ### Create an App
 
 In Visual Studio: *(again)*
-Create a new **Visual C#** > **Windows** project and select **Modern UI WPF Navigation.
+Create a new **Visual C#** > **Windows** project and select **Modern UI WPF Navigation**.
 
-Your new Application includes a MainWindow with two pages (**Home.xaml** and **SettingsPage.xaml**) stored in the Pages project folder; 
+Your new Application includes a MainWindow with two pages (**Home.xaml** and **SettingsPage.xaml**) stored in the Pages project folder. 
 
 The App's basic structure is:
 
