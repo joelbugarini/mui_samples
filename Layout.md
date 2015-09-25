@@ -1,10 +1,6 @@
 ## Layout
 
-#### Wireframe
-  
-  ![wireframe][wireframe]
-
-#### Basic
+#### Basic 
 The basic layout uses all the available content space. All that needs to be done is to set the Style of the page root to **ContentRoot**, this ensures the content is properly aligned. Use a **ScrollViewer** control to ensure all content is accessible.
 
 ![Basic Layout][basic]
