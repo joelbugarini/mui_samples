@@ -13,7 +13,12 @@ In Visual Studio:
 
 * Click **Download** and you are done.
 
-After installing mui for WPF in Visual Studio (https://github.com/firstfloorsoftware/mui) you may want to use this code samples as a reference building Zune-like apps.
+### Create an App
+
+In Visual Studio: *(again)*
+Create a new **Visual C#** > **Windows** project and select **Modern UI WPF Navigation.
+
+Your new Application includes a MainWindow with two pages (**Home.xaml** and **SettingsPage.xaml**) stored in the Pages project folder; 
 
 The App's basic structure is:
 
@@ -26,6 +31,8 @@ The App's basic structure is:
         ├── MainWindow.xml
         |   └── MainWindow.xml.cs  
         └── packages.config
+
+After installing mui for WPF in Visual Studio (https://github.com/firstfloorsoftware/mui) you may want to use this code samples as a reference building Zune-like apps.
     
 All the samples were taked from the App provided by kozw in the application Demo FirstFloor in https://github.com/firstfloorsoftware/mui/releases
 
