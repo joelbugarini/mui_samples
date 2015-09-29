@@ -1,6 +1,5 @@
 ## Controls
-=====
-#### Buttons
+### Buttons
 ![Button][Button]
 ```XML
 <StackPanel HorizontalAlignment="Left" Width="140">
@@ -23,7 +22,7 @@
 <RadioButton Content="another option, disabled and checked" IsEnabled="False" IsChecked="True" GroupName="Foo" />
 ```
 =====
-#### Data Grid
+### Data Grid
 
 ![Data Grid][Data-grid]
 ```XML
@@ -38,7 +37,7 @@
 </DataGrid>
 ```
 =====
-#### Date
+### Date
 
 ![Calendar][Calendar]
 ```XML
@@ -60,7 +59,7 @@
 ```
 
 =====
-#### Items Control
+### Items Control
 
 ![Combo Box][Combobox-dropdown]
 ```XML
@@ -167,46 +166,183 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
 </TreeView>
 ```
 =====
-#### Progress Bar
+### Progress Bar
 
-![][]
+![Progress Bar][Progress-bar]
 ```XML
-
+<ProgressBar Minimum="0" Maximum="1" Height="16" IsIndeterminate="True" Margin="0,0,0,16" />
+<ProgressBar Minimum="0" Maximum="1" Value=".7" Height="16" IsIndeterminate="False" Margin="0,0,0,16" />
 ```
-
 
 =====
-#### Sliders
+### Sliders
 
-![][]
+![Slider][Slider]
 ```XML
+<Slider Margin="0,0,0,16" />
+  <Slider IsEnabled="False" Value="3" TickPlacement="Both" Margin="0,0,0,16" />
+  <Slider IsSelectionRangeEnabled="True" SelectionStart="4" SelectionEnd="7" TickPlacement="Both" Margin="0,0,0,16" />
 
+<StackPanel Orientation="Horizontal" Height="200">
+  <Slider Orientation="Vertical" />
+  <Slider Orientation="Vertical" IsEnabled="False" Value="3" TickPlacement="Both" Margin="16,0,0,0" />
+  <Slider Orientation="Vertical" IsSelectionRangeEnabled="True" SelectionStart="4" SelectionEnd="7" TickPlacement="Both" Margin="16,0,0,0" />
+</StackPanel>
 ```
-
 
 =====
-#### Text
+### Text
 
-![][]
+![Text Styling][Text-stiling]
 ```XML
-
+<TextBlock Text="HEADING1" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
+<TextBlock Text="HEADING2" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
+<TextBlock Text="title" Style="{StaticResource Title}" Margin="0,0,0,8"/>
+<TextBlock Text="Normal" Margin="0,0,0,8"/>
+<TextBlock Text="small" Style="{StaticResource Small}" Margin="0,0,0,8"/>
+<TextBlock Text="EMPHASIS" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
+<TextBlock Text="Fixed" Style="{StaticResource Fixed}" Margin="0,0,0,32"/>
 ```
-![][]
+![Text and password box][Text-and-password-box]
 ```XML
-
+<TextBox Text="textbox" Margin="0,0,0,8"/>
+<TextBox Text="readonly textbox" IsReadOnly="True" Margin="0,0,0,8"/>
+<TextBox Text="disabled textbox" IsEnabled="False" Margin="0,0,0,8"/>
+<PasswordBox Password="12345" Margin="0,0,0,32"/>
 ```
-![][]
+![Label][Label]
 ```XML
-
+<Label Content="label" Margin="0,0,0,8"/>
+<Label Content="disabled label" IsEnabled="False" />
 ```
-
-
 =====
-#### Sample Form
+### Sample Form
 
-![][]
+![Sample Form][Sample-form]
 ```XML
+<StackPanel MinWidth="200">
 
+
+            <TextBlock Text="SAMPLE FORM" Style="{StaticResource Heading2}" Margin="0,0,0,8" />
+            <mui:BBCodeBlock BBCode="A sample form demonstrating various controls with support for validation and focus visualization." Margin="0,0,0,16"/>
+
+            <!-- actual form starts here -->
+            <StackPanel x:Name="Form" Orientation="Vertical">
+
+                <!-- create viewmodel -->
+                <StackPanel.DataContext>
+                    <app:SampleFormViewModel />
+                </StackPanel.DataContext>
+
+                <StackPanel.Resources>
+                    <Style TargetType="StackPanel">
+                        <Setter Property="Orientation" Value="Horizontal" />
+                        <Setter Property="Margin" Value="0,0,0,4" />
+                    </Style>
+                    <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+                        <Setter Property="Width" Value="100" />
+                        <Setter Property="VerticalAlignment" Value="Center" />
+                    </Style>
+                    <Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+                        <Setter Property="Padding" Value="0,3" />
+                    </Style>
+                    <Style TargetType="RadioButton" BasedOn="{StaticResource {x:Type RadioButton}}">
+                        <Setter Property="Padding" Value="0,3" />
+                    </Style>
+                </StackPanel.Resources>
+
+                <StackPanel>
+                    <Label Content="First name" Target="{Binding ElementName=TextFirstName}"/>
+                    <TextBox x:Name="TextFirstName" Width="150" Text="{Binding FirstName, Mode=TwoWay, ValidatesOnDataErrors=True}" />
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Last name" Target="{Binding ElementName=TextLastName}"/>
+                    <TextBox x:Name="TextLastName" Width="150" Text="{Binding LastName, Mode=TwoWay, ValidatesOnDataErrors=True}"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Gender" Target="{Binding ElementName=RadioGendeMale}"/>
+                    <RadioButton x:Name="RadioGendeMale" Content="Male" />
+                    <RadioButton Content="Female" Margin="8,0,0,0" />
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Birth date" Target="{Binding ElementName=DateBirth}" />
+                    <DatePicker x:Name="DateBirth" />
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Address" Target="{Binding ElementName=TextAddress}"/>
+                    <TextBox x:Name="TextAddress" Width="150" />
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="City" Target="{Binding ElementName=TextCity}"/>
+                    <TextBox x:Name="TextCity" Width="150" />
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="State" Target="{Binding ElementName=ComboState}"/>
+                    <ComboBox x:Name="ComboState" Width="150">
+                        <ComboBoxItem>Alabama</ComboBoxItem>
+                        <ComboBoxItem>Alaska</ComboBoxItem>
+                        <ComboBoxItem>Arizona</ComboBoxItem>
+                        <ComboBoxItem>Arkansas</ComboBoxItem>
+                        <ComboBoxItem>California</ComboBoxItem>
+                        <ComboBoxItem>Colorado</ComboBoxItem>
+                        <ComboBoxItem>Connecticut</ComboBoxItem>
+                        <ComboBoxItem>Delaware</ComboBoxItem>
+                        <ComboBoxItem>Florida</ComboBoxItem>
+                        <ComboBoxItem>Georgia</ComboBoxItem>
+                        <ComboBoxItem>Hawaii</ComboBoxItem>
+                        <ComboBoxItem>Idaho</ComboBoxItem>
+                        <ComboBoxItem>Illinois</ComboBoxItem>
+                        <ComboBoxItem>Indiana</ComboBoxItem>
+                        <ComboBoxItem>Iowa</ComboBoxItem>
+                        <ComboBoxItem>Kansas</ComboBoxItem>
+                        <ComboBoxItem>Kentucky</ComboBoxItem>
+                        <ComboBoxItem>Louisiana</ComboBoxItem>
+                        <ComboBoxItem>Maine</ComboBoxItem>
+                        <ComboBoxItem>Maryland</ComboBoxItem>
+                        <ComboBoxItem>Massachusetts</ComboBoxItem>
+                        <ComboBoxItem>Michigan</ComboBoxItem>
+                        <ComboBoxItem>Minnesota</ComboBoxItem>
+                        <ComboBoxItem>Mississippi</ComboBoxItem>
+                        <ComboBoxItem>Missouri</ComboBoxItem>
+                        <ComboBoxItem>Montana</ComboBoxItem>
+                        <ComboBoxItem>Nebraska</ComboBoxItem>
+                        <ComboBoxItem>Nevada</ComboBoxItem>
+                        <ComboBoxItem>New Hampshire</ComboBoxItem>
+                        <ComboBoxItem>New Jersey</ComboBoxItem>
+                        <ComboBoxItem>New Mexico</ComboBoxItem>
+                        <ComboBoxItem>New York</ComboBoxItem>
+                        <ComboBoxItem>North Carolina</ComboBoxItem>
+                        <ComboBoxItem>North Dakota</ComboBoxItem>
+                        <ComboBoxItem>Ohio</ComboBoxItem>
+                        <ComboBoxItem>Oklahoma</ComboBoxItem>
+                        <ComboBoxItem>Oregon</ComboBoxItem>
+                        <ComboBoxItem>Pennsylvania</ComboBoxItem>
+                        <ComboBoxItem>Rhode Island</ComboBoxItem>
+                        <ComboBoxItem>South Carolina</ComboBoxItem>
+                        <ComboBoxItem>South Dakota</ComboBoxItem>
+                        <ComboBoxItem>Tennessee</ComboBoxItem>
+                        <ComboBoxItem>Texas</ComboBoxItem>
+                        <ComboBoxItem>Utah</ComboBoxItem>
+                        <ComboBoxItem>Vermont</ComboBoxItem>
+                        <ComboBoxItem>Virginia</ComboBoxItem>
+                        <ComboBoxItem>Washington</ComboBoxItem>
+                        <ComboBoxItem>West Virginia</ComboBoxItem>
+                        <ComboBoxItem>Wisconsin</ComboBoxItem>
+                        <ComboBoxItem>Wyoming</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Zip code" Target="{Binding ElementName=TextZipCode}"/>
+                    <TextBox x:Name="TextZipCode" Width="150" />
+                </StackPanel>
+                <StackPanel >
+                    <Label />
+                    <CheckBox Content="I agree to the terms of use" />
+                </StackPanel>
+
+                <Button Content="Submit" Margin="100,16,0,0" HorizontalAlignment="Left" />
+            </StackPanel>
+        </StackPanel>
 ```
 
 
