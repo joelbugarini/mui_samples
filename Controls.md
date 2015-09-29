@@ -281,50 +281,9 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
                     <ComboBox x:Name="ComboState" Width="150">
                         <ComboBoxItem>Alabama</ComboBoxItem>
                         <ComboBoxItem>Alaska</ComboBoxItem>
-                        <ComboBoxItem>Arizona</ComboBoxItem>
-                        <ComboBoxItem>Arkansas</ComboBoxItem>
-                        <ComboBoxItem>California</ComboBoxItem>
-                        <ComboBoxItem>Colorado</ComboBoxItem>
-                        <ComboBoxItem>Connecticut</ComboBoxItem>
-                        <ComboBoxItem>Delaware</ComboBoxItem>
-                        <ComboBoxItem>Florida</ComboBoxItem>
-                        <ComboBoxItem>Georgia</ComboBoxItem>
-                        <ComboBoxItem>Hawaii</ComboBoxItem>
-                        <ComboBoxItem>Idaho</ComboBoxItem>
-                        <ComboBoxItem>Illinois</ComboBoxItem>
-                        <ComboBoxItem>Indiana</ComboBoxItem>
-                        <ComboBoxItem>Iowa</ComboBoxItem>
-                        <ComboBoxItem>Kansas</ComboBoxItem>
-                        <ComboBoxItem>Kentucky</ComboBoxItem>
-                        <ComboBoxItem>Louisiana</ComboBoxItem>
-                        <ComboBoxItem>Maine</ComboBoxItem>
-                        <ComboBoxItem>Maryland</ComboBoxItem>
-                        <ComboBoxItem>Massachusetts</ComboBoxItem>
-                        <ComboBoxItem>Michigan</ComboBoxItem>
-                        <ComboBoxItem>Minnesota</ComboBoxItem>
-                        <ComboBoxItem>Mississippi</ComboBoxItem>
-                        <ComboBoxItem>Missouri</ComboBoxItem>
-                        <ComboBoxItem>Montana</ComboBoxItem>
-                        <ComboBoxItem>Nebraska</ComboBoxItem>
-                        <ComboBoxItem>Nevada</ComboBoxItem>
-                        <ComboBoxItem>New Hampshire</ComboBoxItem>
-                        <ComboBoxItem>New Jersey</ComboBoxItem>
-                        <ComboBoxItem>New Mexico</ComboBoxItem>
-                        <ComboBoxItem>New York</ComboBoxItem>
-                        <ComboBoxItem>North Carolina</ComboBoxItem>
-                        <ComboBoxItem>North Dakota</ComboBoxItem>
-                        <ComboBoxItem>Ohio</ComboBoxItem>
-                        <ComboBoxItem>Oklahoma</ComboBoxItem>
-                        <ComboBoxItem>Oregon</ComboBoxItem>
-                        <ComboBoxItem>Pennsylvania</ComboBoxItem>
-                        <ComboBoxItem>Rhode Island</ComboBoxItem>
-                        <ComboBoxItem>South Carolina</ComboBoxItem>
-                        <ComboBoxItem>South Dakota</ComboBoxItem>
-                        <ComboBoxItem>Tennessee</ComboBoxItem>
-                        <ComboBoxItem>Texas</ComboBoxItem>
-                        <ComboBoxItem>Utah</ComboBoxItem>
-                        <ComboBoxItem>Vermont</ComboBoxItem>
-                        <ComboBoxItem>Virginia</ComboBoxItem>
+                                        •
+                                        •
+                                        •
                         <ComboBoxItem>Washington</ComboBoxItem>
                         <ComboBoxItem>West Virginia</ComboBoxItem>
                         <ComboBoxItem>Wisconsin</ComboBoxItem>
