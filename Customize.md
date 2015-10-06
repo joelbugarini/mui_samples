@@ -44,10 +44,6 @@ First we will create the `settings` file to store the theme name, source of the 
 Then we will add the following parametters (it's easier to write the namespace instead of searching in the tree view):
 
 
-![settings](https://cloud.githubusercontent.com/assets/4912547/10302028/2a5e63ae-6bbd-11e5-9fcb-30306aca81d1.PNG)
-![write](https://cloud.githubusercontent.com/assets/4912547/10302030/2d025340-6bbd-11e5-903b-b232c7c9a005.PNG)
-
-
 | Name                     | Type                       | Scope  | Value     |
 | ------------------------ |:-------------------------- | ------ | ----------- | 
 | SelectedAccentColor      | System.Windows.Media.Color |  User  |  #FF1BA1E2     |
@@ -55,6 +51,9 @@ Then we will add the following parametters (it's easier to write the namespace i
 | SelectedThemeDisplayName | strng                      |  User  | dark |
 | SelectedFontSize         | string                     |  User  | large |
 
+
+![settings](https://cloud.githubusercontent.com/assets/4912547/10302028/2a5e63ae-6bbd-11e5-9fcb-30306aca81d1.PNG)
+![write](https://cloud.githubusercontent.com/assets/4912547/10302030/2d025340-6bbd-11e5-903b-b232c7c9a005.PNG)
 
 To get those settings just write `var a = [filename].Settings.Default.[param];` and `[filename].Settings.Default.Save();` to all modified parametters (more about settings [MSDN](https://msdn.microsoft.com/en-us/library/aa730869(v=vs.80).aspx) and [DotNetPerls](http://www.dotnetperls.com/settings) )
 
@@ -79,6 +78,7 @@ public MainWindow()
 Notice we also added a private property of AppearanceViewModel.
 
 Now, to save the settings we can add a `Closing="Window_Closing"` event to our window:
+
 xml
 ```xml
 <mui:ModernWindow x:Class="App.MainWindow"
