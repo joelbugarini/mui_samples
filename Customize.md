@@ -35,7 +35,7 @@ to
 #### 
 
 #### Modern UI Navigation Application Settings
-The MUI Navigation Template comes pre-configured with a settings page for the user to choose the window color, font size and selection color of the app. It's a very nice feature but once the app is closed the **settings are lost**. Here we will make this configuration persist with the help of a `settings` file, load settings when App start and save when it Ends.
+The MUI Navigation Template comes pre-configured with a settings page for the user to choose the window color, font size and selection color of the app. It's a very nice feature but once the app is closed the **settings are lost**. Here we will make this configuration persist with the help of a `settings` file. We will **load** settings when App start and **save** settings when the event close is fired.
 
 First we will create the `settings` file to store the theme name, source of the theme, accent color and font size:
 
