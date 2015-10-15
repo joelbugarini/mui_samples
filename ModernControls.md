@@ -1,13 +1,86 @@
 ![BBCODEBLOCK][BBCODEBLOCK]
+```XML
+<mui:BBCodeBlock BBCode="Simple rich text formatting using BBCode. Supporting [b]bold[/b], [i]italic[/i], [b][i]bold italic[/i][/b], [u]underline[/u], [color=#ff4500]colors[/color], [size=10]different[/size] [size=16]sizes[/size] and support for [url=http://xamlspy.com]navigable urls[/url].&#13;&#10;&#13;&#10;BBCode formatted text works great with MVVM.&#13;&#10;&#13;&#10;To learn more about link navigation see the [url=/Pages/Navigation.xaml|_top]navigation page[/url]." />
+```
 ![MODERNBUTTON][BODERNBUTTON]
+```XML
+<mui:BBCodeBlock BBCode="Icons courtesy of [url=http://modernuiicons.com/]Modern UI Icons[/url]" Margin="0,0,0,16" />
+                <mui:ModernButton Content="modern button" IconData="{StaticResource HomeIconData}" Margin="0,0,0,8" />
+                <mui:ModernButton Content="disabled modern button" IconData="F1 M 24,13C 27.1521,13 29.9945,14.3258 32,16.4501L 32,11L 35,14L 35,22L 27,22L 24,19L 29.5903,19C 28.217,17.4656 26.2212,16.5 24,16.5C 20.1969,16.5 17.055,19.3306 16.5661,23L 13.0448,23C 13.5501,17.3935 18.262,13 24,13 Z M 24,31.5C 27.8031,31.5 30.945,28.6694 31.4339,25L 34.9552,25C 34.4499,30.6065 29.738,35 24,35C 20.8479,35 18.0055,33.6742 16,31.5499L 16,37L 13,34L 13,26L 21,26L 24,29L 18.4097,29C 19.783,30.5344 21.7787,31.5 24,31.5 Z" IsEnabled="False" Margin="0,0,0,16" />
+
+```
 ![MODERNBUTTON-SIZE][MODERNBUTTON-SIZE]
+```XML
+  <mui:ModernButton EllipseDiameter="20" IconWidth="12" IconHeight="8"/>
+  <mui:ModernButton />
+  <mui:ModernButton EllipseDiameter="26" IconWidth="14" IconHeight="14" />
+  <mui:ModernButton EllipseDiameter="32" IconWidth="20" IconHeight="20" />
+  <mui:ModernButton EllipseDiameter="48" EllipseStrokeThickness="2" IconWidth="30" IconHeight="30" />
+  <mui:ModernButton EllipseDiameter="64" EllipseStrokeThickness="2" IconWidth="42" IconHeight="42" />
+  <mui:ModernButton EllipseDiameter="96" EllipseStrokeThickness="3" IconWidth="64" IconHeight="64" />
+```
 ![MODERNDIALOG-BUTTON][MODERNDIALOG-BUTTON]
+```XML
+<Button Content="common dialog" Margin="0,0,0,8" HorizontalAlignment="Left" Click="CommonDialog_Click"/>
+```
+
 ![MODERNDIALOG-DIALOG][MODERNDIALOG-DIALOG]
+```C#
+private void CommonDialog_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new ModernDialog {
+                Title = "Common dialog",
+                Content = new LoremIpsum()
+            };
+            dlg.Buttons = new Button[] { dlg.OkButton, dlg.CancelButton};
+            dlg.ShowDialog();
+
+            this.dialogResult.Text = dlg.DialogResult.HasValue ? dlg.DialogResult.ToString() : "<null>";
+            this.dialogMessageBoxResult.Text = dlg.MessageBoxResult.ToString();
+        }
+```
 ![MESSAGEBOX][MESSAGEBOX]
+```XML
+<StackPanel Margin="0,0,0,8">
+            <RadioButton x:Name="ok" Content="ok" IsChecked="True" Margin="0,0,0,2" />
+            <RadioButton x:Name="okcancel" Content="ok, cancel" Margin="0,0,0,2"/>
+            <RadioButton x:Name="yesno" Content="yes, no" Margin="0,0,0,2"/>
+            <RadioButton x:Name="yesnocancel" Content="yes, no, cancel" Margin="0,0,0,2"/>
+        </StackPanel>
+        
+        <Button Content="message dialog" Click="MessageDialog_Click" Margin="0,0,0,8"/>
+        <TextBlock>
+            <Run Text="MessageBox result:" />
+            <Run x:Name="msgboxResult" FontWeight="Bold" />
+        </TextBlock>
+```
 ![MESSAGEBOX-DIALOG][MESSAGEBOX-DIALOG]
+```C#
+private void MessageDialog_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxButton btn = MessageBoxButton.OK;
+            if (true == ok.IsChecked) btn = MessageBoxButton.OK;
+            else if (true == okcancel.IsChecked) btn = MessageBoxButton.OKCancel;
+            else if (true == yesno.IsChecked) btn = MessageBoxButton.YesNo;
+            else if (true == yesnocancel.IsChecked) btn = MessageBoxButton.YesNoCancel;
+
+            var result = ModernDialog.ShowMessage("This is a simple Modern UI styled message dialog. Do you like it?", "Message Dialog", btn);
+
+            this.msgboxResult.Text = result.ToString();
+        }
+```
 ![MODERNFRAME][MODERNFRAME]
+```XML
+
+```
 ![MODERNMENU][MODERNMENU]
+```XML
+
+```
 ![MODERNMENU-GROUP][MODERNMENU-GROUP]
+```XML
+
+```
 ![MODERNPROGRESSRING-PULSE][MODERNPROGRESSRING-PULSE]
 ![MODERNPROGRESSRING-DOUBLE][MODERNPROGRESSRING-DOUBLE]
 ![MODERNPROGRESSRING-PLANE][MODERNPROGRESSRING-PLANE]
