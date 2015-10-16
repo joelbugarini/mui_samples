@@ -79,14 +79,38 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 ```XML
 
 ```
-![MODERNPROGRESSRING-PULSE][MODERNPROGRESSRING-PULSE] ```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource PulseProgressRingStyle}" /> ```
-![MODERNPROGRESSRING-DOUBLE][MODERNPROGRESSRING-DOUBLE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource DoubleBounceProgressRingStyle}" /> ```
-![MODERNPROGRESSRING-PLANE][MODERNPROGRESSRING-PLANE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource RotatingPlaneProgressRingStyle}" /> ```
-![MODERNPROGRESSRING-THREE][MODERNPROGRESSRING-THREE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ThreeBounceProgressRingStyle}" /> ```
-![MODERNPROGRESSRING-CUBES][MODERNPROGRESSRING-CUBES]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WanderingCubesProgressRingStyle}" /> ```
-![MODERNPROGRESSRING-WAVE][MODERNPROGRESSRING-WAVE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WaveProgressRingStyle}" /> ```
-![MODERNPROGRESSRING-CHASING][MODERNPROGRESSRING-CHASING]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ChasingDotsProgressRingStyle}" /> ```
-![MODERNPROGRESSRING-CIRCLE][MODERNPROGRESSRING-CIRCLE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource CircleProgressRingStyle}" /> ```
+=====
+```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource PulseProgressRingStyle}" /> ```
+
+![MODERNPROGRESSRING-PULSE][MODERNPROGRESSRING-PULSE] 
+
+```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource DoubleBounceProgressRingStyle}" /> ```
+
+![MODERNPROGRESSRING-DOUBLE][MODERNPROGRESSRING-DOUBLE]
+
+```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource RotatingPlaneProgressRingStyle}" /> ```
+
+![MODERNPROGRESSRING-PLANE][MODERNPROGRESSRING-PLANE]
+
+```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ThreeBounceProgressRingStyle}" /> ```
+
+![MODERNPROGRESSRING-THREE][MODERNPROGRESSRING-THREE]
+
+```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WanderingCubesProgressRingStyle}" /> ```
+
+![MODERNPROGRESSRING-CUBES][MODERNPROGRESSRING-CUBES]
+
+```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WaveProgressRingStyle}" /> ```
+
+![MODERNPROGRESSRING-WAVE][MODERNPROGRESSRING-WAVE]
+
+```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ChasingDotsProgressRingStyle}" /> ```
+
+![MODERNPROGRESSRING-CHASING][MODERNPROGRESSRING-CHASING]
+
+```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource CircleProgressRingStyle}" /> ```
+
+![MODERNPROGRESSRING-CIRCLE][MODERNPROGRESSRING-CIRCLE]
 ```XML
 
 ```
