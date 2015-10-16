@@ -77,14 +77,17 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
         }
 ```
 =====
+####Modern Frame
 ![MODERNFRAME][MODERNFRAME]
 ```XML
 
 ```
+####Modern Menu
 ![MODERNMENU][MODERNMENU]
 ```XML
 
 ```
+####Modern Menu adding elements
 ![MODERNMENU-GROUP][MODERNMENU-GROUP]
 ```XML
 
@@ -160,6 +163,7 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 ```XML
 
 ```
+###Modern Window
 ![MODERNWINDOW-SETTINGS][MODERNWINDOW-SETTINGS]
 ![MODERNWINDOW][MODERNWINDOW]
 
@@ -173,8 +177,8 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 [MESSAGEBOX]:https://cloud.githubusercontent.com/assets/13318413/10495279/ffa27060-726f-11e5-869a-9ed63c377e64.png
 [MESSAGEBOX-DIALOG]:https://cloud.githubusercontent.com/assets/13318413/10495280/ffa83e64-726f-11e5-86ad-02148c259749.png
 [MODERNFRAME]:https://cloud.githubusercontent.com/assets/13318413/10554743/2e122c4a-741b-11e5-8954-a4485bfdede0.PNG
-[MODERNMENU]:https://cloud.githubusercontent.com/assets/13318413/10495282/ffb851d2-726f-11e5-87fe-2930120e5a7e.PNG
-[MODERNMENU-GROUP]:https://cloud.githubusercontent.com/assets/13318413/10554742/2e10bf72-741b-11e5-9a0f-541ab4509f15.PNG
+[MODERNMENU]:https://cloud.githubusercontent.com/assets/13318413/10554742/2e10bf72-741b-11e5-9a0f-541ab4509f15.PNG
+[MODERNMENU-GROUP]:https://cloud.githubusercontent.com/assets/13318413/10495283/ffbdb262-726f-11e5-954a-2a9e54ddc719.PNG
 [MODERNPROGRESSRING-PULSE]:https://cloud.githubusercontent.com/assets/13318413/10495285/ffc05df0-726f-11e5-8538-ee66c30bfcb3.PNG
 [MODERNPROGRESSRING-DOUBLE]:https://cloud.githubusercontent.com/assets/13318413/10495284/ffbe9a7e-726f-11e5-925e-3b0c469daac4.PNG
 [MODERNPROGRESSRING-PLANE]:https://cloud.githubusercontent.com/assets/13318413/10495286/ffc1b240-726f-11e5-82e7-a647cdb090f7.PNG
