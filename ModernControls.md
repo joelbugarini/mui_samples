@@ -80,6 +80,9 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 
 ```
 =====
+###Progress Rings
+
+####Pulse
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource PulseProgressRingStyle}" />
 
@@ -87,6 +90,7 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 
 ![MODERNPROGRESSRING-PULSE][MODERNPROGRESSRING-PULSE] 
 
+####Double Bounce
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource DoubleBounceProgressRingStyle}" />
 
@@ -94,6 +98,7 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 
 ![MODERNPROGRESSRING-DOUBLE][MODERNPROGRESSRING-DOUBLE]
 
+####Rotating Plane
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource RotatingPlaneProgressRingStyle}" /> 
 
@@ -101,6 +106,7 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 
 ![MODERNPROGRESSRING-PLANE][MODERNPROGRESSRING-PLANE]
 
+####Three Bounce
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ThreeBounceProgressRingStyle}" /> 
 
@@ -108,6 +114,7 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 
 ![MODERNPROGRESSRING-THREE][MODERNPROGRESSRING-THREE]
 
+####Wandering Cubes
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WanderingCubesProgressRingStyle}" /> 
 
@@ -115,6 +122,7 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 
 ![MODERNPROGRESSRING-CUBES][MODERNPROGRESSRING-CUBES]
 
+####Wave
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WaveProgressRingStyle}" />
 
@@ -122,6 +130,7 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 
 ![MODERNPROGRESSRING-WAVE][MODERNPROGRESSRING-WAVE]
 
+####Chasing Dots
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ChasingDotsProgressRingStyle}" /> 
 
@@ -129,6 +138,7 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 
 ![MODERNPROGRESSRING-CHASING][MODERNPROGRESSRING-CHASING]
 
+####Circle
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource CircleProgressRingStyle}" /> 
 
