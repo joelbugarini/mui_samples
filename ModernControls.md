@@ -7,7 +7,6 @@
 <mui:BBCodeBlock BBCode="Icons courtesy of [url=http://modernuiicons.com/]Modern UI Icons[/url]" Margin="0,0,0,16" />
     <mui:ModernButton Content="modern button" IconData="{StaticResource HomeIconData}" Margin="0,0,0,8" />
     <mui:ModernButton Content="disabled modern button" IconData="F1 M 24,13C 27.1521,13 29.9945,14.3258 32,16.4501L 32,11L 35,14L 35,22L 27,22L 24,19L 29.5903,19C 28.217,17.4656 26.2212,16.5 24,16.5C 20.1969,16.5 17.055,19.3306 16.5661,23L 13.0448,23C 13.5501,17.3935 18.262,13 24,13 Z M 24,31.5C 27.8031,31.5 30.945,28.6694 31.4339,25L 34.9552,25C 34.4499,30.6065 29.738,35 24,35C 20.8479,35 18.0055,33.6742 16,31.5499L 16,37L 13,34L 13,26L 21,26L 24,29L 18.4097,29C 19.783,30.5344 21.7787,31.5 24,31.5 Z" IsEnabled="False" Margin="0,0,0,16" />
-
 ```
 ![MODERNBUTTON-SIZE][MODERNBUTTON-SIZE]
 ```XML
@@ -80,14 +79,17 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 ```XML
 
 ```
-![MODERNPROGRESSRING-PULSE][MODERNPROGRESSRING-PULSE]
-![MODERNPROGRESSRING-DOUBLE][MODERNPROGRESSRING-DOUBLE]
-![MODERNPROGRESSRING-PLANE][MODERNPROGRESSRING-PLANE]
-![MODERNPROGRESSRING-THREE][MODERNPROGRESSRING-THREE]
-![MODERNPROGRESSRING-CUBES][MODERNPROGRESSRING-CUBES]
-![MODERNPROGRESSRING-WAVE][MODERNPROGRESSRING-WAVE]
-![MODERNPROGRESSRING-CHASING][MODERNPROGRESSRING-CHASING]
-![MODERNPROGRESSRING-CIRCLE][MODERNPROGRESSRING-CIRCLE]
+![MODERNPROGRESSRING-PULSE][MODERNPROGRESSRING-PULSE] ```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource PulseProgressRingStyle}" /> ```
+![MODERNPROGRESSRING-DOUBLE][MODERNPROGRESSRING-DOUBLE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource DoubleBounceProgressRingStyle}" /> ```
+![MODERNPROGRESSRING-PLANE][MODERNPROGRESSRING-PLANE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource RotatingPlaneProgressRingStyle}" /> ```
+![MODERNPROGRESSRING-THREE][MODERNPROGRESSRING-THREE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ThreeBounceProgressRingStyle}" /> ```
+![MODERNPROGRESSRING-CUBES][MODERNPROGRESSRING-CUBES]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WanderingCubesProgressRingStyle}" /> ```
+![MODERNPROGRESSRING-WAVE][MODERNPROGRESSRING-WAVE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WaveProgressRingStyle}" /> ```
+![MODERNPROGRESSRING-CHASING][MODERNPROGRESSRING-CHASING]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ChasingDotsProgressRingStyle}" /> ```
+![MODERNPROGRESSRING-CIRCLE][MODERNPROGRESSRING-CIRCLE]```XML <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource CircleProgressRingStyle}" /> ```
+```XML
+
+```
 ![MODERNWINDOW-SETTINGS][MODERNWINDOW-SETTINGS]
 ![MODERNWINDOW][MODERNWINDOW]
 
