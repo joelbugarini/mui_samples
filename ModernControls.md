@@ -80,12 +80,75 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 ####Modern Frame
 ![MODERNFRAME][MODERNFRAME]
 ```XML
+    <Border BorderBrush="{DynamicResource ButtonBorder}" BorderThickness="1" HorizontalAlignment="Left" Margin="0,0,0,16">
+        <mui:ModernFrame x:Name="Frame" Source="/Content/ModernFrame/Sample.xaml" 
+             Width="480" Height="200" Padding="4"
+             FragmentNavigation="Frame_FragmentNavigation"
+             Navigated="Frame_Navigated"
+             Navigating="Frame_Navigating"
+             NavigationFailed="Frame_NavigationFailed"/>
+    </Border>
 
+    <TextBlock Margin="0,0,0,16">
+        <Run Text="Source:" />
+        <Run Text="{Binding Source, ElementName=Frame}" FontWeight="Bold" />
+    </TextBlock>
+
+    <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
+        <Button Content="back" Command="NavigationCommands.BrowseBack" CommandTarget="{Binding ElementName=Frame}"/>
+        <Button Content="refresh" Command="NavigationCommands.Refresh" CommandTarget="{Binding ElementName=Frame}" Margin="8,0,0,0"/>
+        <Button Content="error" Command="NavigationCommands.GoToPage" CommandParameter="/Content/ModernFrame/ErrorSample.xaml" CommandTarget="{Binding ElementName=Frame}" Margin="8,0,0,0"/>
+        <Button Content="cancellable" Command="NavigationCommands.GoToPage" CommandParameter="/Content/ModernFrame/CancelNavigateSample.xaml" CommandTarget="{Binding ElementName=Frame}" Margin="8,0,0,0"/>
+         <Button Content="fragment" Command="NavigationCommands.GoToPage" CommandParameter="/Content/ModernFrame/CancelNavigateSample.xaml#somevalue" CommandTarget="{Binding ElementName=Frame}" Margin="8,0,0,0"/>
+    </StackPanel>
+
+    <TextBlock Text="Events" FontWeight="Bold" Margin="0,0,0,8" />
+    <TextBox x:Name="TextEvents" Width="480" Height="200" HorizontalAlignment="Left" IsReadOnly="True" VerticalScrollBarVisibility="Auto" />
 ```
+
+
 ####Modern Menu
 ![MODERNMENU][MODERNMENU]
 ```XML
+<mui:ModernMenu x:Name="Menu" Margin="0,0,0,16" SelectedSource="/link1">
+    <mui:ModernMenu.LinkGroups>
+        <mui:LinkGroup DisplayName="group 1">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="link 1" Source="/link1" />
+                <mui:Link DisplayName="link 2" Source="/link2" />
+                <mui:Link DisplayName="link 3" Source="/link3" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="group 2">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="link 4" Source="/link4" />
+                <mui:Link DisplayName="link 5" Source="/link5" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernMenu.LinkGroup</mui:ModernMenu>
 
+                <!-- displaying the current state of the menu -->
+    <TextBlock>
+        <Run Text="SelectedLinkGroup:" />
+        <Run Text="{Binding SelectedLinkGroup.DisplayName, ElementName=Menu}" FontWeight="Bold" />
+    </TextBlock>
+
+    <TextBlock>
+        <Run Text="SelectedLink:" />
+        <Run Text="{Binding SelectedLink.DisplayName, ElementName=Menu}" FontWeight="Bold" />
+    </TextBlock>
+
+    <TextBlock Margin="0,0,0,16">
+        <Run Text="SelectedSource:" />
+        <Run Text="{Binding SelectedSource, ElementName=Menu}" FontWeight="Bold" />
+    </TextBlock>
+
+    <StackPanel Orientation="Horizontal">
+        <Button x:Name="AddGroup" Content="add group" />
+        <Button x:Name="AddLink" Content="add link" Margin="8,0,0,0" />
+        <Button x:Name="RemoveGroup" Content="remove group" Margin="8,0,0,0" />
+        <Button x:Name="RemoveLink" Content="remove link" Margin="8,0,0,0" />
+    </StackPanel>
 ```
 ####Modern Menu adding elements
 ![MODERNMENU-GROUP][MODERNMENU-GROUP]
