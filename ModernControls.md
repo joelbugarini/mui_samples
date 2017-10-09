@@ -1,4 +1,4 @@
-BBCODE BLOCK
+BBCode Block
 =====
 ![BBCODEBLOCK][BBCODEBLOCK]
 ```XML
@@ -157,7 +157,7 @@ Modern Menu
         <Button x:Name="RemoveLink" Content="remove link" Margin="8,0,0,0" />
     </StackPanel>
 ```
-####Modern Menu adding elements
+Modern Menu adding elements
 ![MODERNMENU-GROUP][MODERNMENU-GROUP]
 ```XML
 
@@ -242,11 +242,10 @@ Circle
 ```XML
 
 ```
-###Modern Window
+Modern Window
+=====
 ![MODERNWINDOW-SETTINGS][MODERNWINDOW-SETTINGS]
 ![MODERNWINDOW][MODERNWINDOW]
-
-=========================================================================================================================
 
 [BBCODEBLOCK]:https://cloud.githubusercontent.com/assets/13318413/10554741/2e10a1a4-741b-11e5-84e6-4d6734e6edee.png
 [BODERNBUTTON]:https://cloud.githubusercontent.com/assets/13318413/10495278/ff9faaec-726f-11e5-8db1-6f91edf0533f.png
