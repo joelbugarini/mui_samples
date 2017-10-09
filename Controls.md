@@ -1,20 +1,20 @@
 ## Controls
 ### Buttons
-![Button][Button]
+![Button](https://cloud.githubusercontent.com/assets/13318413/10148949/5a99e5a2-65eb-11e5-8294-1fb76c948122.png)
 ```XML
 <StackPanel HorizontalAlignment="Left" Width="140">
   <Button Content="standard button" Margin="0,0,0,8" />
   <Button Content="disabled button" IsEnabled="False" Margin="0,0,0,32" />
 </StackPanel>
 ```
-![Checkbox][Checkbox]
+![Checkbox](https://cloud.githubusercontent.com/assets/13318413/10148951/5d984528-65eb-11e5-91c9-00ec46fb6eac.png)
 ```XML
 <CheckBox Content="standard checkbox" Margin="0,0,0,4"  />
 <CheckBox Content="three state checkbox" IsThreeState="True" Margin="0,0,0,4"  />
 <CheckBox Content="disabled checkbox" IsEnabled="False" Margin="0,0,0,4" />
 <CheckBox Content="disabled checked checkbox" IsChecked="True" IsEnabled="False" Margin="0,0,0,32" />
 ```
-![Radio button][Radio-button]
+![Radio-button](https://cloud.githubusercontent.com/assets/13318413/10148955/67698d6e-65eb-11e5-9bff-423d5ed0198c.png)
 ```XML
 <RadioButton Content="option 1" Margin="0,0,0,4"  />
 <RadioButton Content="option 2" Margin="0,0,0,4" />
@@ -24,7 +24,7 @@
 =====
 ### Data Grid
 
-![Data Grid][Data-grid]
+![Data-grid](https://cloud.githubusercontent.com/assets/13318413/10148957/67906d30-65eb-11e5-8b6e-e9f43be5eea1.png)
 ```XML
 <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" >
   <DataGrid.Columns>
@@ -39,7 +39,7 @@
 =====
 ### Date
 
-![Calendar][Calendar]
+![Calendar](https://cloud.githubusercontent.com/assets/13318413/10148956/678cd27e-65eb-11e5-99d1-8462b74340cd.png)
 ```XML
 <StackPanel Orientation="Horizontal">
   <Calendar Margin="0,0,8,0">
@@ -50,7 +50,7 @@
   <Calendar Margin="0,0,0,32" IsEnabled="False" />
 </StackPanel>
 ```
-![Date picker][Datepicker]
+![Datepicker](https://cloud.githubusercontent.com/assets/13318413/10148958/67956dda-65eb-11e5-97d8-abe5b257ff0c.png)
 ```XML
 <StackPanel HorizontalAlignment="Left">
   <DatePicker Margin="0,0,0,8" />
@@ -61,7 +61,7 @@
 =====
 ### Items Control
 
-![Combo Box][Combobox-dropdown]
+![Combobox-dropdown](https://cloud.githubusercontent.com/assets/13318413/10148961/67a73f42-65eb-11e5-8bd3-816dd8e50c10.png)
 ```XML
 <ComboBox Margin="0,0,0,8" HorizontalAlignment="Left" MinWidth="100">
   <ComboBoxItem Content="Item 1" />
@@ -71,7 +71,7 @@
   <ComboBoxItem Content="Item 5" />
 </ComboBox>
 ```
-![combo Box (Editable)][combobox-editable]
+![Combobox-editable](https://cloud.githubusercontent.com/assets/13318413/10148960/67a5a8b2-65eb-11e5-85dc-9783e6ccbb7c.png)
 ```XML
 <ComboBox IsEditable="True" Margin="0,0,0,32" HorizontalAlignment="Left" MinWidth="100">
   <ComboBoxItem Content="Item 1" />
@@ -81,7 +81,7 @@
   <ComboBoxItem Content="Item 5" />
 </ComboBox>
 ```
-![Context Menu][Context-menu]
+![Context-menu](https://cloud.githubusercontent.com/assets/13318413/10148962/67b64f3c-65eb-11e5-8020-ebd2f68d5545.png)
 ```XML
 <Button Content="show context menu" Click="ShowContextMenu_Click" Margin="0,0,0,32" HorizontalAlignment="Left"/>
 ```
@@ -105,7 +105,7 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
             contextMenu.IsOpen = true;
         }
 ```
-![List Box][List-box]
+![List-box](https://cloud.githubusercontent.com/assets/13318413/10148964/67ba8516-65eb-11e5-9fca-7e53e539f07b.png)
 ```XML
 <ListBox Margin="0,0,0,32">
   <ListBoxItem Content="Item 1" />
@@ -115,7 +115,7 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
   <ListBoxItem Content="Item 5" />
 </ListBox>
 ```
-![List View][List-view]
+![List-view](https://cloud.githubusercontent.com/assets/13318413/10148965/67be58a8-65eb-11e5-9349-904acc0f18a8.png)
 ```XML
 <ListView Margin="0,0,0,16">
   <ListViewItem Content="Item 1" />
@@ -125,7 +125,7 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
   <ListViewItem Content="Item 5" />
 </ListView>
 ```
-![List View Columns][Columns]
+![Columns](https://cloud.githubusercontent.com/assets/13318413/10148966/67c1c894-65eb-11e5-9dcd-4fd816e4deb3.png)
 ```XML
 <ListView Margin="0,0,0,32">
   <ListView.View>
@@ -143,7 +143,7 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
   <ListViewItem Content="Item 5" />
   </ListView>
 ```
-![Tree View][Tree-view]
+![Tree-view](https://cloud.githubusercontent.com/assets/13318413/10148967/67c7ad68-65eb-11e5-80b3-5482bfa945f9.png)
 ```XML
 <TreeView>
   <TreeViewItem Header="Item 1">
@@ -168,7 +168,7 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
 =====
 ### Progress Bar
 
-![Progress Bar][Progress-bar]
+![Progress-bar](https://cloud.githubusercontent.com/assets/13318413/10148968/67c8ed0e-65eb-11e5-8c9d-ea357676ba72.png)
 ```XML
 <ProgressBar Minimum="0" Maximum="1" Height="16" IsIndeterminate="True" Margin="0,0,0,16" />
 <ProgressBar Minimum="0" Maximum="1" Value=".7" Height="16" IsIndeterminate="False" Margin="0,0,0,16" />
@@ -177,7 +177,7 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
 =====
 ### Sliders
 
-![Slider][Slider]
+![Slider](https://cloud.githubusercontent.com/assets/13318413/10148969/67cc1bd2-65eb-11e5-8c80-57e50f54d7ff.png)
 ```XML
 <Slider Margin="0,0,0,16" />
   <Slider IsEnabled="False" Value="3" TickPlacement="Both" Margin="0,0,0,16" />
@@ -193,7 +193,7 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
 =====
 ### Text
 
-![Text Styling][Text-stiling]
+![Text-styling](https://cloud.githubusercontent.com/assets/13318413/10148970/67cf33bc-65eb-11e5-8977-d5cd1ada0ba8.png)
 ```XML
 <TextBlock Text="HEADING1" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
 <TextBlock Text="HEADING2" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
@@ -203,14 +203,14 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
 <TextBlock Text="EMPHASIS" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
 <TextBlock Text="Fixed" Style="{StaticResource Fixed}" Margin="0,0,0,32"/>
 ```
-![Text and password box][Text-and-password-box]
+![Text-and-password-box](https://cloud.githubusercontent.com/assets/13318413/10148971/67d71636-65eb-11e5-9add-1c628fdebb2e.png)
 ```XML
 <TextBox Text="textbox" Margin="0,0,0,8"/>
 <TextBox Text="readonly textbox" IsReadOnly="True" Margin="0,0,0,8"/>
 <TextBox Text="disabled textbox" IsEnabled="False" Margin="0,0,0,8"/>
 <PasswordBox Password="12345" Margin="0,0,0,32"/>
 ```
-![Label][Label]
+![Label](https://cloud.githubusercontent.com/assets/13318413/10148972/67e7f654-65eb-11e5-9d92-857de38f18fd.png)
 ```XML
 <Label Content="label" Margin="0,0,0,8"/>
 <Label Content="disabled label" IsEnabled="False" />
@@ -218,7 +218,7 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
 =====
 ### Sample Form
 
-![Sample Form][Sample-form]
+![Sample-form](https://cloud.githubusercontent.com/assets/13318413/10148973/67eacc76-65eb-11e5-8086-990f2c830b05.png)
 ```XML
 <StackPanel MinWidth="200">
 
@@ -304,24 +304,3 @@ private void ShowContextMenu_Click(object sender, RoutedEventArgs e)
         </StackPanel>
 ```
 
-
-=======================================================================================================================
-[Button]: https://cloud.githubusercontent.com/assets/13318413/10148949/5a99e5a2-65eb-11e5-8294-1fb76c948122.png
-[Checkbox]: https://cloud.githubusercontent.com/assets/13318413/10148951/5d984528-65eb-11e5-91c9-00ec46fb6eac.png
-[Radio-button]: https://cloud.githubusercontent.com/assets/13318413/10148955/67698d6e-65eb-11e5-9bff-423d5ed0198c.png
-[Data-grid]: https://cloud.githubusercontent.com/assets/13318413/10148957/67906d30-65eb-11e5-8b6e-e9f43be5eea1.png
-[Calendar]: https://cloud.githubusercontent.com/assets/13318413/10148956/678cd27e-65eb-11e5-99d1-8462b74340cd.png
-[Datepicker]: https://cloud.githubusercontent.com/assets/13318413/10148958/67956dda-65eb-11e5-97d8-abe5b257ff0c.png
-[Combobox-dropdown]: https://cloud.githubusercontent.com/assets/13318413/10148961/67a73f42-65eb-11e5-8bd3-816dd8e50c10.png
-[Combobox-editable]: https://cloud.githubusercontent.com/assets/13318413/10148960/67a5a8b2-65eb-11e5-85dc-9783e6ccbb7c.png
-[Context-menu]: https://cloud.githubusercontent.com/assets/13318413/10148962/67b64f3c-65eb-11e5-8020-ebd2f68d5545.png
-[List-box]: https://cloud.githubusercontent.com/assets/13318413/10148964/67ba8516-65eb-11e5-9fca-7e53e539f07b.png
-[List-view]: https://cloud.githubusercontent.com/assets/13318413/10148965/67be58a8-65eb-11e5-9349-904acc0f18a8.png
-[Columns]: https://cloud.githubusercontent.com/assets/13318413/10148966/67c1c894-65eb-11e5-9dcd-4fd816e4deb3.png
-[Tree-view]: https://cloud.githubusercontent.com/assets/13318413/10148967/67c7ad68-65eb-11e5-80b3-5482bfa945f9.png
-[Progress-bar]: https://cloud.githubusercontent.com/assets/13318413/10148968/67c8ed0e-65eb-11e5-8c9d-ea357676ba72.png
-[Slider]: https://cloud.githubusercontent.com/assets/13318413/10148969/67cc1bd2-65eb-11e5-8c80-57e50f54d7ff.png
-[Text-styling]: https://cloud.githubusercontent.com/assets/13318413/10148970/67cf33bc-65eb-11e5-8977-d5cd1ada0ba8.png
-[Text-and-password-box]: https://cloud.githubusercontent.com/assets/13318413/10148971/67d71636-65eb-11e5-9add-1c628fdebb2e.png
-[Label]: https://cloud.githubusercontent.com/assets/13318413/10148972/67e7f654-65eb-11e5-9d92-857de38f18fd.png
-[Sample-form]: https://cloud.githubusercontent.com/assets/13318413/10148973/67eacc76-65eb-11e5-8086-990f2c830b05.png
