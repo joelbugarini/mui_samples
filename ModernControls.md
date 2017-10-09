@@ -1,18 +1,21 @@
-####BBCODE BLOCK
+BBCODE BLOCK
+=====
 ![BBCODEBLOCK][BBCODEBLOCK]
 ```XML
 <mui:BBCodeBlock BBCode="Simple rich text formatting using BBCode. Supporting [b]bold[/b], [i]italic[/i], [b][i]bold italic[/i][/b], [u]underline[/u], [color=#ff4500]colors[/color], [size=10]different[/size] [size=16]sizes[/size] and support for [url=http://xamlspy.com]navigable urls[/url].&#13;&#10;&#13;&#10;BBCode formatted text works great with MVVM.&#13;&#10;&#13;&#10;To learn more about link navigation see the [url=/Pages/Navigation.xaml|_top]navigation page[/url]." />
 ```
+
+Modern Button
 =====
-####Modern Button
 ![MODERNBUTTON][BODERNBUTTON]
 ```XML
 <mui:BBCodeBlock BBCode="Icons courtesy of [url=http://modernuiicons.com/]Modern UI Icons[/url]" Margin="0,0,0,16" />
     <mui:ModernButton Content="modern button" IconData="{StaticResource HomeIconData}" Margin="0,0,0,8" />
     <mui:ModernButton Content="disabled modern button" IconData="F1 M 24,13C 27.1521,13 29.9945,14.3258 32,16.4501L 32,11L 35,14L 35,22L 27,22L 24,19L 29.5903,19C 28.217,17.4656 26.2212,16.5 24,16.5C 20.1969,16.5 17.055,19.3306 16.5661,23L 13.0448,23C 13.5501,17.3935 18.262,13 24,13 Z M 24,31.5C 27.8031,31.5 30.945,28.6694 31.4339,25L 34.9552,25C 34.4499,30.6065 29.738,35 24,35C 20.8479,35 18.0055,33.6742 16,31.5499L 16,37L 13,34L 13,26L 21,26L 24,29L 18.4097,29C 19.783,30.5344 21.7787,31.5 24,31.5 Z" IsEnabled="False" Margin="0,0,0,16" />
 ```
+
+Variable Sizes
 =====
-####Variable Sizes
 ![MODERNBUTTON-SIZE][MODERNBUTTON-SIZE]
 ```XML
   <mui:ModernButton EllipseDiameter="20" IconWidth="12" IconHeight="8"/>
@@ -22,8 +25,9 @@
   <mui:ModernButton EllipseDiameter="48" EllipseStrokeThickness="2" IconWidth="30" IconHeight="30" />
   <mui:ModernButton EllipseDiameter="64" EllipseStrokeThickness="2" IconWidth="42" IconHeight="42" />
 ```
+
+Modern Dialog
 =====
-####Modern Dialog
 ![MODERNDIALOG-BUTTON][MODERNDIALOG-BUTTON]
 ```XML
 <Button Content="common dialog" Margin="0,0,0,8" HorizontalAlignment="Left" Click="CommonDialog_Click"/>
@@ -43,8 +47,9 @@ private void CommonDialog_Click(object sender, RoutedEventArgs e)
             this.dialogMessageBoxResult.Text = dlg.MessageBoxResult.ToString();
         }
 ```
+
+Message Box
 =====
-####Message Box
 ![MESSAGEBOX][MESSAGEBOX]
 ```XML
 <StackPanel Margin="0,0,0,8">
@@ -76,8 +81,9 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
             this.msgboxResult.Text = result.ToString();
         }
 ```
+
+Modern Frame
 =====
-####Modern Frame
 ![MODERNFRAME][MODERNFRAME]
 ```XML
     <Border BorderBrush="{DynamicResource ButtonBorder}" BorderThickness="1" HorizontalAlignment="Left" Margin="0,0,0,16">
@@ -107,7 +113,8 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 ```
 
 
-####Modern Menu
+Modern Menu
+=====
 ![MODERNMENU][MODERNMENU]
 ```XML
 <mui:ModernMenu x:Name="Menu" Margin="0,0,0,16" SelectedSource="/link1">
@@ -155,67 +162,76 @@ private void MessageDialog_Click(object sender, RoutedEventArgs e)
 ```XML
 
 ```
-=====
-=====
-###Progress Rings
 
-####Pulse
+
+Progress Rings
+=====
+
+Pulse
+=====
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource PulseProgressRingStyle}" />
 
 ```
 
 ![MODERNPROGRESSRING-PULSE][MODERNPROGRESSRING-PULSE] 
+
+Double Bounce
 =====
-####Double Bounce
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource DoubleBounceProgressRingStyle}" />
 
 ```
 
 ![MODERNPROGRESSRING-DOUBLE][MODERNPROGRESSRING-DOUBLE]
+
+Rotating Plane
 =====
-####Rotating Plane
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource RotatingPlaneProgressRingStyle}" /> 
 
 ```
 
 ![MODERNPROGRESSRING-PLANE][MODERNPROGRESSRING-PLANE]
+
+Three Bounce
 =====
-####Three Bounce
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ThreeBounceProgressRingStyle}" /> 
 
 ```
 
 ![MODERNPROGRESSRING-THREE][MODERNPROGRESSRING-THREE]
+
+Wandering Cubes
 =====
-####Wandering Cubes
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WanderingCubesProgressRingStyle}" /> 
 
 ```
 
 ![MODERNPROGRESSRING-CUBES][MODERNPROGRESSRING-CUBES]
+
+Wave
 =====
-####Wave
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource WaveProgressRingStyle}" />
 
 ```
 
 ![MODERNPROGRESSRING-WAVE][MODERNPROGRESSRING-WAVE]
+
+Chasing Dots
 =====
-####Chasing Dots
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource ChasingDotsProgressRingStyle}" /> 
 
 ```
 
 ![MODERNPROGRESSRING-CHASING][MODERNPROGRESSRING-CHASING]
+
+Circle
 =====
-####Circle
 ```XML 
 <mui:ModernProgressRing IsActive="True" Width="80" Height="80" Style="{StaticResource CircleProgressRingStyle}" /> 
 
